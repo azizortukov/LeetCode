@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
         System.out.println(Arrays.toString(
-                solution.getConcatenation(new int[]{1, 2, 1})));
+                solution.buildArray(new int[]{0, 2, 1, 5, 3, 4})));
     }
 
 }
