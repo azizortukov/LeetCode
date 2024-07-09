@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.numIdenticalPairs(new int[]{1,2,3,1,1,3}));
+        System.out.println(solution.finalValueAfterOperations(
+                new String[]{"--X","X++","X++"}));
     }
 
 }
