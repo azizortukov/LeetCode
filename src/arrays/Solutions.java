@@ -21,12 +21,17 @@ public class Solutions {
      */
 
     public int[] buildArray(int[] nums) {
-        int length = nums.length;
-        int[] result = new int[length];
-        for (int i = 0; i < length; i++) {
-            result[i] = nums[nums[i]];
+        recurseBuilder(nums, 0);
+        return nums;
+    }
+
+    private void recurseBuilder(int[] nums, int i) {
+        if (i < nums.length) {
+            int temp = nums[i];
+            int res = nums[temp];
+            recurseBuilder(nums, i + 1);
+            nums[i] = res;
         }
-        return result;
     }
 
 }
