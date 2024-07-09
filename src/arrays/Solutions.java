@@ -68,4 +68,19 @@ public class Solutions {
         return sum;
     }
 
+    /*
+    1470. Shuffle the Array
+    For more info: https://leetcode.com/problems/shuffle-the-array/description
+     */
+
+    public int[] shuffle(int[] nums, int n) {
+        int[] result = new int[nums.length];
+        int index = 0;
+        for (int i = 0; i < n; i++) {
+            result[index++] = nums[i];
+            result[index++] = nums[i + n];
+        }
+        return result;
+    }
+
 }
