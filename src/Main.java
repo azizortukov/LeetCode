@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.minMovesToSeat(
-                new int[]{3,1,5}, new int[]{2,7,4}
+        System.out.println(solution.numberOfEmployeesWhoMetTarget(
+                new int[]{0, 1, 2, 3, 4}, 2
         ));
     }
 
