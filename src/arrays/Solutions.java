@@ -93,8 +93,9 @@ public class Solutions {
 
     public List<Integer> findWordsContaining(String[] words, char x) {
         List<Integer> list = new ArrayList<>();
+        String charAsString = String.valueOf(x);
         for (int i = 0; i < words.length; i++) {
-            if (words[i].contains(String.valueOf(x))) {
+            if (words[i].contains(charAsString)) {
                 list.add(i);
             }
         }
