@@ -48,7 +48,7 @@ public class Solutions {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] == nums[j]) {
-                    count ++;
+                    count++;
                 }
             }
         }
@@ -148,6 +148,29 @@ public class Solutions {
             }
         }
         return count;
+    }
+
+    /*
+    1431. Kids With the Greatest Number of Candies
+    For more info: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description
+     */
+
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < candies.length; i++) {
+            if (candies[i] > max) {
+                max = candies[i];
+            }
+        }
+        List<Boolean> list = new ArrayList<>();
+        for (int i = 0; i < candies.length; i++) {
+            if (candies[i] + extraCandies >= max) {
+                list.add(true);
+            } else {
+                list.add(false);
+            }
+        }
+        return list;
     }
 
 }
