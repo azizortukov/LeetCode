@@ -102,4 +102,21 @@ public class Solutions {
         return list;
     }
 
+    /*
+    1672. Richest Customer Wealth
+    For more info: https://leetcode.com/problems/richest-customer-wealth/description
+     */
+
+    public int maximumWealth(int[][] accounts) {
+        int maxWealth = 0;
+        for (int[] account : accounts) {
+            int sum = 0;
+            for (int amount : account) {
+                sum += amount;
+            }
+            maxWealth = Math.max(maxWealth, sum);
+        }
+        return maxWealth;
+    }
+
 }
