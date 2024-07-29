@@ -197,12 +197,12 @@ public class Solutions {
      */
 
     public boolean isPalindrome(int x) {
-        StringBuilder str = new StringBuilder(String.valueOf(x));
-        StringBuilder reverse = new StringBuilder();
-        for (int i = 0; i < str.length(); i++) {
-            reverse.append(str.charAt(str.length() - 1 - i));
+        String s = String.valueOf(x);
+        int n = s.length();
+        for (int i = 0; i < n / 2; i++) {
+            if (s.charAt(i) != s.charAt(n - i - 1)) return false;
         }
-        return str.toString().equals(reverse.toString());
+        return true;
     }
 
 }
