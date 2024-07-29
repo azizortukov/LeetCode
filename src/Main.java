@@ -7,7 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.countPairs(List.of(-1, 1, 2, 3, 1), 2));
+        System.out.println(Arrays.toString(solution.smallerNumbersThanCurrent(
+                new int[]{8, 1, 2, 2, 3}
+        )));
     }
 
 }
