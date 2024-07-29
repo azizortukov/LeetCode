@@ -191,4 +191,18 @@ public class Solutions {
         return result;
     }
 
+    /*
+    9. Palindrome Number
+    For more info: https://leetcode.com/problems/palindrome-number/description
+     */
+
+    public boolean isPalindrome(int x) {
+        StringBuilder str = new StringBuilder(String.valueOf(x));
+        StringBuilder reverse = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            reverse.append(str.charAt(str.length() - 1 - i));
+        }
+        return str.toString().equals(reverse.toString());
+    }
+
 }
