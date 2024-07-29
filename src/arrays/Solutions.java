@@ -263,4 +263,20 @@ public class Solutions {
         }
         return ans;
     }
+
+    /*
+    1480. Running Sum of 1d Array
+    For more info: https://leetcode.com/problems/running-sum-of-1d-array/description
+     */
+
+    public int[] runningSum(int[] nums) {
+        int lastSum = 0;
+        int[] result = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            lastSum += nums[i];
+            result[i] = lastSum;
+        }
+        return result;
+    }
+
 }
