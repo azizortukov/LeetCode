@@ -205,4 +205,27 @@ public class Solutions {
         return true;
     }
 
+    /*
+    1637. Widest Vertical Area Between Two Points Containing No Points
+    For more info: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
+     */
+
+    public int maxWidthOfVerticalArea(int[][] points) {
+        int n = points.length;
+        int[] xValues = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            xValues[i] = points[i][0];
+        }
+
+        Arrays.sort(xValues);
+
+        int maxWidth = 0;
+        for (int i = 1; i < n; i++) {
+            maxWidth = Math.max(maxWidth, xValues[i] - xValues[i - 1]);
+        }
+
+        return maxWidth;
+    }
+
 }

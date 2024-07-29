@@ -6,7 +6,9 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.isPalindrome(121));
+        System.out.println(solution.maxWidthOfVerticalArea(
+                new int[][]{{8, 7}, {9, 9}, {7, 4}, {9, 7}}
+        ));
     }
 
 }
