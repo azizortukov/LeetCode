@@ -322,4 +322,20 @@ public class Solutions {
         return sum;
     }
 
+    /*
+    2114. Maximum Number of Words Found in Sentences
+    For more info: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description
+     */
+
+    public int mostWordsFound(String[] sentences) {
+        int biggest = 0;
+        for (String sentence : sentences) {
+            String[] split = sentence.split(" ");
+            if (split.length > biggest) {
+                biggest = split.length;
+            }
+        }
+        return biggest;
+    }
+
 }
