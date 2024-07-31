@@ -356,12 +356,27 @@ public class Solutions {
     }
 
     /*
-
-    For more info:
+    912. Sort an Array
+    For more info: https://leetcode.com/problems/sort-an-array/description
      */
     public int[] sortArray(int[] nums) {
         Arrays.sort(nums);
         return nums;
+    }
+
+    /*
+    3065. Minimum Operations to Exceed Threshold Value I
+    For more information: https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
+     */
+
+    public int minOperations(int[] nums, int k) {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < k) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }
