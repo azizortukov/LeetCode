@@ -7,8 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(Arrays.toString(solution.findArray(
-                new int[]{5, 2, 0, 3, 1})));
+        System.out.println(solution.dominantIndex(
+                new int[]{3, 6, 1, 0}
+        ));
     }
 
 }

@@ -414,4 +414,28 @@ public class Solutions {
         return arr;
     }
 
+    /*
+    747. Largest Number At Least Twice of Others
+     */
+
+    public int dominantIndex(int[] nums) {
+        int max = 0;
+        int previousMax = 0;
+        int ans = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (max < nums[i]) {
+                previousMax = max;
+                max = nums[i];
+                ans = i;
+            } else if (nums[i] > previousMax) {
+                previousMax = nums[i];
+            }
+        }
+        if (max >= previousMax * 2) {
+            return ans;
+        } else {
+            return -1;
+        }
+    }
+
 }
