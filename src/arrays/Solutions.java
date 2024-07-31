@@ -355,4 +355,13 @@ public class Solutions {
         return count;
     }
 
+    /*
+
+    For more info:
+     */
+    public int[] sortArray(int[] nums) {
+        Arrays.sort(nums);
+        return nums;
+    }
+
 }
