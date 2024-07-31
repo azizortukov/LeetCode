@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.mostWordsFound(
-                new String[]{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
+        System.out.println(solution.numberOfPairs(
+                new int[]{1, 2, 4, 12}, new int[]{2, 4}, 3
         ));
     }
 
