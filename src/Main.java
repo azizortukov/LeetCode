@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.minOperations(
-                new int[]{2, 11, 10, 1, 3}, 10
-        ));
+        System.out.println(Arrays.toString(solution.createTargetArray(
+                new int[]{0, 1, 2, 3, 4}, new int[]{0, 1, 2, 2, 1}
+        )));
     }
 
 }

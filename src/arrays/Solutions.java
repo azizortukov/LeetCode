@@ -379,4 +379,24 @@ public class Solutions {
         return count;
     }
 
+    /*
+    1389. Create Target Array in the Given Order
+    For more info: https://leetcode.com/problems/create-target-array-in-the-given-order/description
+     */
+
+    public int[] createTargetArray(int[] nums, int[] index) {
+        List<Integer> targetList = new ArrayList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            targetList.add(index[i], nums[i]);
+        }
+
+        int[] targetArray = new int[targetList.size()];
+        for (int i = 0; i < targetList.size(); i++) {
+            targetArray[i] = targetList.get(i);
+        }
+
+        return targetArray;
+    }
+
 }
