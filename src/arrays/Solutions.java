@@ -518,12 +518,12 @@ public class Solutions {
 
     public int[] numberGame(int[] nums) {
         Arrays.sort(nums);
-        int[] res = new int[nums.length];
         for (int i = 0; i < nums.length - 1; i += 2) {
-            res[i] = nums[i + 1];
-            res[i + 1] = nums[i];
+            int current = nums[i];
+            nums[i] = nums[i + 1];
+            nums[i + 1] = current;
         }
-        return res;
+        return nums;
     }
 
 }
