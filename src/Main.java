@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.truncateSentence(
-                "Hello how are you Contestant", 4
-        ));
+        System.out.println(Arrays.toString(solution.numberGame(
+                new int[]{5, 4, 2, 3}
+        )));
     }
 
 }
