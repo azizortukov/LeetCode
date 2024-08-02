@@ -445,17 +445,15 @@ public class Solutions {
      */
 
     public String[] sortPeople(String[] names, int[] heights) {
-        String[] res = new String[names.length];
-        TreeMap<Integer, String> map = new TreeMap<>();
+        SortedMap<Integer, String> map = new TreeMap<>((o1, o2) -> o2 - o1);
         for (int i = 0; i < names.length; i++) {
             map.put(heights[i], names[i]);
         }
-        List<Map.Entry<Integer, String>> list = map.entrySet().stream().sorted(Map.Entry.<Integer, String>comparingByKey().reversed())
-                .toList();
-        for (int i = 0; i < list.size(); i++) {
-            res[i] = list.get(i).getValue();
+        int i = 0;
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            names[i++] = entry.getValue();
         }
-        return res;
+        return names;
     }
 
 }
