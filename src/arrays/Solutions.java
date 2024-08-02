@@ -456,4 +456,34 @@ public class Solutions {
         return names;
     }
 
+    /*
+    1773. Count Items Matching a Rule
+    For more info: https://leetcode.com/problems/count-items-matching-a-rule/description
+     */
+
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        switch (ruleKey) {
+            case "type" -> {
+                return getCount(0, items, ruleValue);
+            }
+            case "color" -> {
+                return getCount(1, items, ruleValue);
+            }
+            case "name" -> {
+                return getCount(2, items, ruleValue);
+            }
+        }
+        return 0;
+    }
+
+    private int getCount(int index, List<List<String>> items, String ruleValue) {
+        int count = 0;
+        for (List<String> item : items) {
+            if (ruleValue.equals(item.get(index))) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }

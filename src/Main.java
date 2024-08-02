@@ -7,9 +7,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(Arrays.toString(solution.sortPeople(
-                new String[]{"Mary", "John", "Emma"}, new int[]{180, 165, 170}
-        )));
+        System.out.println(solution.countMatches(
+                List.of(
+                        List.of("phone", "blue", "pixel"),
+                        List.of("computer", "silver", "lenovo"),
+                        List.of("phone", "gold", "iphone")
+                ), "color", "silver"
+        ));
     }
 
 }
