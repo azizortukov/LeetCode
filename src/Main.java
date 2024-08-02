@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.dominantIndex(
-                new int[]{3, 6, 1, 0}
-        ));
+        System.out.println(Arrays.toString(solution.sortPeople(
+                new String[]{"Mary", "John", "Emma"}, new int[]{180, 165, 170}
+        )));
     }
 
 }

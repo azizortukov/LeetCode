@@ -155,14 +155,14 @@ public class Solutions {
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = Integer.MIN_VALUE;
-        for (int i = 0; i < candies.length; i++) {
-            if (candies[i] > max) {
-                max = candies[i];
+        for (int candy : candies) {
+            if (candy > max) {
+                max = candy;
             }
         }
         List<Boolean> list = new ArrayList<>();
-        for (int i = 0; i < candies.length; i++) {
-            if (candies[i] + extraCandies >= max) {
+        for (int candy : candies) {
+            if (candy + extraCandies >= max) {
                 list.add(true);
             } else {
                 list.add(false);
@@ -254,8 +254,8 @@ public class Solutions {
         int[] ans = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             int count = 0;
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[i] > nums[j]) {
+            for (int num : nums) {
+                if (nums[i] > num) {
                     count++;
                 }
             }
@@ -345,9 +345,9 @@ public class Solutions {
 
     public int numberOfPairs(int[] nums1, int[] nums2, int k) {
         int count = 0;
-        for(int i = 0; i < nums1.length; i++) {
-            for(int j = 0; j < nums2.length; j++) {
-                if (nums1[i] % (nums2[j] * k) == 0) {
+        for (int j : nums1) {
+            for (int value : nums2) {
+                if (j % (value * k) == 0) {
                     count++;
                 }
             }
@@ -371,8 +371,8 @@ public class Solutions {
 
     public int minOperations(int[] nums, int k) {
         int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] < k) {
+        for (int num : nums) {
+            if (num < k) {
                 count++;
             }
         }
@@ -416,6 +416,7 @@ public class Solutions {
 
     /*
     747. Largest Number At Least Twice of Others
+    For more info: https://leetcode.com/problems/largest-number-at-least-twice-of-others/description
      */
 
     public int dominantIndex(int[] nums) {
@@ -436,6 +437,25 @@ public class Solutions {
         } else {
             return -1;
         }
+    }
+
+    /*
+    2418. Sort the People
+    For more info: https://leetcode.com/problems/sort-the-people/description/
+     */
+
+    public String[] sortPeople(String[] names, int[] heights) {
+        String[] res = new String[names.length];
+        TreeMap<Integer, String> map = new TreeMap<>();
+        for (int i = 0; i < names.length; i++) {
+            map.put(heights[i], names[i]);
+        }
+        List<Map.Entry<Integer, String>> list = map.entrySet().stream().sorted(Map.Entry.<Integer, String>comparingByKey().reversed())
+                .toList();
+        for (int i = 0; i < list.size(); i++) {
+            res[i] = list.get(i).getValue();
+        }
+        return res;
     }
 
 }
