@@ -492,15 +492,23 @@ public class Solutions {
      */
 
     public String truncateSentence(String s, int k) {
-        String[] strs = s.split(" ");
-        StringBuilder res = new StringBuilder();
-        for (int i = 0; i < k; i++) {
-            res.append(strs[i]);
-            if (i != k - 1) {
-                res.append(" ");
-            }
+        String out = "";
+        int space_cnt = 0;
+        int i = 0;
+
+        for (i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ')
+                space_cnt++;
+
+            if (space_cnt == k)
+                break;
+
         }
-        return res.toString();
+        if (i == s.length())
+            return s;
+
+
+        return s.substring(0, i);
     }
 
 }
