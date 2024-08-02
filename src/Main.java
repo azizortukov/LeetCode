@@ -7,12 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.countMatches(
-                List.of(
-                        List.of("phone", "blue", "pixel"),
-                        List.of("computer", "silver", "lenovo"),
-                        List.of("phone", "gold", "iphone")
-                ), "color", "silver"
+        System.out.println(solution.truncateSentence(
+                "Hello how are you Contestant", 4
         ));
     }
 

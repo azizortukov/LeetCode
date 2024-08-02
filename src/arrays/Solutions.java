@@ -486,4 +486,21 @@ public class Solutions {
         return count;
     }
 
+    /*
+    1816. Truncate Sentence
+    For more info: https://leetcode.com/problems/truncate-sentence/description
+     */
+
+    public String truncateSentence(String s, int k) {
+        String[] strs = s.split(" ");
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < k; i++) {
+            res.append(strs[i]);
+            if (i != k - 1) {
+                res.append(" ");
+            }
+        }
+        return res.toString();
+    }
+
 }
