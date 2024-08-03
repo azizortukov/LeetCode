@@ -526,4 +526,22 @@ public class Solutions {
         return nums;
     }
 
+    /*
+    3194. Minimum Average of Smallest and Largest Elements
+    For more info: https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description
+     */
+
+    public double minimumAverage(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length;
+        List<Double> res = new ArrayList<>();
+        for (int i = 0; i < n / 2; i++) {
+            int min = nums[i];
+            int max = nums[n - 1 - i];
+            res.add((min + max) / 2.0);
+        }
+        Collections.sort(res);
+        return res.getFirst();
+    }
+
 }
