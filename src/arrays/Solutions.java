@@ -544,4 +544,21 @@ public class Solutions {
         return res;
     }
 
+    /*
+    1662. Check If Two String Arrays are Equivalent
+    For more info: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description
+     */
+
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        StringBuilder first = new StringBuilder();
+        for (String s : word1) {
+            first.append(s);
+        }
+        StringBuilder second = new StringBuilder();
+        for (String s : word2) {
+            second.append(s);
+        }
+        return first.toString().equals(second.toString());
+    }
+
 }
