@@ -533,15 +533,15 @@ public class Solutions {
 
     public double minimumAverage(int[] nums) {
         Arrays.sort(nums);
-        int n = nums.length;
-        List<Double> res = new ArrayList<>();
-        for (int i = 0; i < n / 2; i++) {
-            int min = nums[i];
-            int max = nums[n - 1 - i];
-            res.add((min + max) / 2.0);
+        double res = 0;
+        int i = 0, j = nums.length - 1;
+        while (i < j) {
+            double currentAverage = (nums[i++] + nums[j--]) / 2.0;
+            if (res == 0 || res > currentAverage) {
+                res = currentAverage;
+            }
         }
-        Collections.sort(res);
-        return res.getFirst();
+        return res;
     }
 
 }
