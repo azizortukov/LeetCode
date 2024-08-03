@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.arrayStringsAreEqual(
-                new String[]{"ab", "c"}, new String[]{"a", "b", "c"}
-        ));
+        System.out.println(Arrays.toString(solution.decompressRLElist(
+                new int[]{1, 2, 3, 4}
+        )));
     }
 
 }

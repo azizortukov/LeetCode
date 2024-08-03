@@ -561,4 +561,23 @@ public class Solutions {
         return first.toString().equals(second.toString());
     }
 
+    /*
+    1313. Decompress Run-Length Encoded List
+    For more info: https://leetcode.com/problems/decompress-run-length-encoded-list/description
+     */
+
+    public int[] decompressRLElist(int[] nums) {
+        int size = 0;
+        for (int i = 0; i < nums.length; i += 2)
+            size += nums[i];
+        int[] result = new int[size];
+        for (int i = 0, j = 0; i < nums.length; i += 2) {
+            while (nums[i]-- > 0) {
+                result[j] = nums[i + 1];
+                j++;
+            }
+        }
+        return result;
+    }
+
 }
