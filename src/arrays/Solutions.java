@@ -599,17 +599,14 @@ public class Solutions {
      */
 
     public int differenceOfSum(int[] nums) {
-        String digits = "";
-        int overallSum = 0;
-        for (int num : nums) {
-            overallSum += num;
-            digits += num;
-
-        }
-
+        int overallSum = Arrays.stream(nums).sum();
         int digitSum = 0;
-        for (int i = 0; i < digits.length(); i++) {
-            digitSum += digits.charAt(i) - '0';
+        for (int num : nums) {
+            int j = num;
+            while (j > 0) {
+                digitSum += j % 10;
+                j /= 10;
+            }
         }
         return overallSum - digitSum;
     }
