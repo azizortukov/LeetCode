@@ -593,4 +593,25 @@ public class Solutions {
         return new String(res);
     }
 
+    /*
+    2535. Difference Between Element Sum and Digit Sum of an Array
+    For more information: https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/submissions
+     */
+
+    public int differenceOfSum(int[] nums) {
+        String digits = "";
+        int overallSum = 0;
+        for (int num : nums) {
+            overallSum += num;
+            digits += num;
+
+        }
+
+        int digitSum = 0;
+        for (int i = 0; i < digits.length(); i++) {
+            digitSum += digits.charAt(i) - '0';
+        }
+        return overallSum - digitSum;
+    }
+
 }
