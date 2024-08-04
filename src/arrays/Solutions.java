@@ -639,4 +639,23 @@ public class Solutions {
         return res;
     }
 
+    /*
+    2367. Number of Arithmetic Triplets
+    For more info: https://leetcode.com/problems/number-of-arithmetic-triplets/description
+     */
+
+    public int arithmeticTriplets(int[] nums, int diff) {
+        Set<Integer> set = new HashSet<>();
+        for (int i : nums) {
+            set.add(i);
+        }
+        int count = 0;
+        for (Integer num : set) {
+            if (set.contains(num + diff) && set.contains(num + (diff * 2))) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }

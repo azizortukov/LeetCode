@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.groupThePeople(
-                new int[]{3, 3, 3, 3, 3, 1, 3}
+        System.out.println(solution.arithmeticTriplets(
+                new int[]{0, 1, 4, 6, 7, 10}, 3
         ));
     }
 
