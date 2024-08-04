@@ -366,7 +366,7 @@ public class Solutions {
 
     /*
     3065. Minimum Operations to Exceed Threshold Value I
-    For more information: https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
+    For more info: https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
      */
 
     public int minOperations(int[] nums, int k) {
@@ -513,7 +513,7 @@ public class Solutions {
 
     /*
     2974. Minimum Number Game
-    For more information: https://leetcode.com/problems/minimum-number-game/description/
+    For more info: https://leetcode.com/problems/minimum-number-game/description/
      */
 
     public int[] numberGame(int[] nums) {
@@ -582,7 +582,7 @@ public class Solutions {
 
     /*
     1528. Shuffle String
-    For more information: https://leetcode.com/problems/shuffle-string/description
+    For more info: https://leetcode.com/problems/shuffle-string/description
      */
 
     public String restoreString(String s, int[] indices) {
@@ -595,7 +595,7 @@ public class Solutions {
 
     /*
     2535. Difference Between Element Sum and Digit Sum of an Array
-    For more information: https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/submissions
+    For more info: https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/submissions
      */
 
     public int differenceOfSum(int[] nums) {
@@ -609,6 +609,34 @@ public class Solutions {
             }
         }
         return overallSum - digitSum;
+    }
+
+    /*
+    1282. Group the People Given the Group Size They Belong To
+    For more info: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description
+     */
+
+    public List<List<Integer>> groupThePeople(int[] groupSizes) {
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        List<List<Integer>> res = new ArrayList<>();
+        for (int i = 0; i < groupSizes.length; i++) {
+            int groupSize = groupSizes[i];
+            List<Integer> list = map.getOrDefault(groupSize, new ArrayList<>());
+            if (list.size() == groupSize) {
+                res.add(list);
+                list = new ArrayList<>();
+                list.add(i);
+                map.put(groupSize, list);
+            } else {
+                list.add(i);
+                map.put(groupSize, list);
+            }
+        }
+        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+            res.add(entry.getValue());
+        }
+
+        return res;
     }
 
 }
