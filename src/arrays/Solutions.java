@@ -747,4 +747,36 @@ public class Solutions {
         return res;
     }
 
+    /*
+    2125. Number of Laser Beams in a Bank
+    For more info: https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description
+     */
+
+    public int numberOfBeams(String[] bank) {
+        List<Integer> laserPoints = new ArrayList<>();
+        for (int i = 0; i < bank.length; i++) {
+            int count = countLaserPoints(bank[i]);
+            if (count == 0) {
+                continue;
+            }
+            laserPoints.add(count);
+        }
+        int lasers = 0;
+        for (int i = 0; i < laserPoints.size() - 1; i++) {
+            lasers = lasers + (laserPoints.get(i) * laserPoints.get(i + 1));
+        }
+        return lasers;
+    }
+
+    private int countLaserPoints(String row) {
+        int count = 0;
+        for (char c : row.toCharArray()) {
+            if (c == '1') {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 }
