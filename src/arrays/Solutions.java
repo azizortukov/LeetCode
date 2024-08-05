@@ -726,4 +726,25 @@ public class Solutions {
         addToMatrix(nums, res);
     }
 
+    /*
+    1769. Minimum Number of Operations to Move All Balls to Each Box
+    For more info:
+     */
+
+    public int[] minOperations(String boxes) {
+        char[] allBoxes = boxes.toCharArray();
+        int[] res = new int[allBoxes.length];
+        for (int i = 0; i < allBoxes.length; i++) {
+            int count = 0;
+            for (int j = 0; j < allBoxes.length; j++) {
+                if (i == j || allBoxes[j] == '0') {
+                    continue;
+                }
+                count += Math.abs(i - j);
+            }
+            res[i] = count;
+        }
+        return res;
+    }
+
 }

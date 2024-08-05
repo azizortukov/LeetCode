@@ -7,9 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.findMatrix(
-                new int[]{1, 3, 4, 1, 2, 3, 1}
-        ));
+        System.out.println(Arrays.toString(solution.minOperations(
+                "110")));
     }
 
 }
