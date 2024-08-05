@@ -779,4 +779,30 @@ public class Solutions {
         return count;
     }
 
+    /*
+    1496. Path Crossing
+    For more info: https://leetcode.com/problems/path-crossing/description/
+     */
+    public boolean isPathCrossing(String path) {
+        int x = 0;
+        int y = 0;
+        List<String> pathsVisited = new ArrayList<>();
+        pathsVisited.add(String.format("(%s,%s)", x, y));
+        for(int i = 0; i < path.length(); i++) {
+            char c = path.charAt(i);
+            switch (c) {
+                case 'N' -> y++;
+                case 'S' -> y--;
+                case 'E' -> x++;
+                case 'W' -> x--;
+            }
+            String currentLocation = String.format("(%s,%s)", x, y);
+            if (pathsVisited.contains(currentLocation)) {
+                return true;
+            }
+            pathsVisited.add(currentLocation);
+        }
+        return false;
+    }
+
 }
