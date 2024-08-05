@@ -698,4 +698,32 @@ public class Solutions {
         return true;
     }
 
+    /*
+    2610. Convert an Array Into a 2D Array With Conditions
+    For more info: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description
+     */
+
+    public List<List<Integer>> findMatrix(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        addToMatrix(nums, res);
+        return res;
+    }
+
+    private void addToMatrix(int[] nums, List<List<Integer>> res) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < 0 || list.contains(nums[i])) {
+                continue;
+            }
+            list.add(nums[i]);
+            nums[i] = -1;
+        }
+        if (list.isEmpty()) {
+            return;
+        }
+        Collections.sort(list);
+        res.add(list);
+        addToMatrix(nums, res);
+    }
+
 }
