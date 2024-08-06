@@ -834,16 +834,25 @@ public class Solutions {
         int paperLatest = -1;
         int glassLatest = -1;
         int time = 0;
-        for (int i = 0; i < garbage.length; i++) {
-            time += garbage[i].length();
+        for (String s : garbage) {
+            time += s.length();
+        }
+        for (int i = garbage.length - 1; i > 0; i--) {
             if (garbage[i].contains("M")) {
                 metalLatest = i;
+                break;
             }
+        }
+        for (int i = garbage.length - 1; i > 0; i--) {
             if (garbage[i].contains("P")) {
                 paperLatest = i;
+                break;
             }
+        }
+        for (int i = garbage.length - 1; i > 0; i--) {
             if (garbage[i].contains("G")) {
                 glassLatest = i;
+                break;
             }
         }
         for (int i = 0; i < travel.length; i++) {
