@@ -805,4 +805,23 @@ public class Solutions {
         return false;
     }
 
+    /*
+    2545. Sort the Students by Their Kth Score
+    For more info: https://leetcode.com/problems/sort-the-students-by-their-kth-score/description
+     */
+
+    public int[][] sortTheStudents(int[][] score, int k) {
+        Map<Integer, Integer> sorted = new TreeMap<>(Comparator.reverseOrder());
+        for (int i = 0; i < score.length; i++) {
+            sorted.put(score[i][k], i);
+        }
+        int[][] res = new int[score.length][score[0].length];
+        int count = 0;
+        for (Map.Entry<Integer, Integer> entry : sorted.entrySet()) {
+            res[count] = score[entry.getValue()];
+            count++;
+        }
+        return res;
+    }
+
 }
