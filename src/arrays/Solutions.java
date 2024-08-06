@@ -408,7 +408,7 @@ public class Solutions {
         int[] arr = new int[pref.length];
         arr[0] = pref[0];
 
-        for(int i = 1; i < pref.length; i++) {
+        for (int i = 1; i < pref.length; i++) {
             arr[i] = pref[i - 1] ^ pref[i];
         }
         return arr;
@@ -788,7 +788,7 @@ public class Solutions {
         int y = 0;
         List<String> pathsVisited = new ArrayList<>();
         pathsVisited.add(String.format("(%s,%s)", x, y));
-        for(int i = 0; i < path.length(); i++) {
+        for (int i = 0; i < path.length(); i++) {
             char c = path.charAt(i);
             switch (c) {
                 case 'N' -> y++;
@@ -822,6 +822,42 @@ public class Solutions {
             count++;
         }
         return res;
+    }
+
+    /*
+    2391. Minimum Amount of Time to Collect Garbage
+    For more info: https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description
+     */
+
+    public int garbageCollection(String[] garbage, int[] travel) {
+        int metalLatest = -1;
+        int paperLatest = -1;
+        int glassLatest = -1;
+        int time = 0;
+        for (int i = 0; i < garbage.length; i++) {
+            time += garbage[i].length();
+            if (garbage[i].contains("M")) {
+                metalLatest = i;
+            }
+            if (garbage[i].contains("P")) {
+                paperLatest = i;
+            }
+            if (garbage[i].contains("G")) {
+                glassLatest = i;
+            }
+        }
+        for (int i = 0; i < travel.length; i++) {
+            if (metalLatest > i) {
+                time += travel[i];
+            }
+            if (paperLatest > i) {
+                time += travel[i];
+            }
+            if (glassLatest > i) {
+                time += travel[i];
+            }
+        }
+        return time;
     }
 
 }
