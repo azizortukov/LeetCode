@@ -903,11 +903,16 @@ public class Solutions {
      */
 
     public int countConsistentStrings(String allowed, String[] words) {
+        Set<Character> allowedLetters = new HashSet<>();
+        for (char ch : allowed.toCharArray()) {
+            allowedLetters.add(ch);
+        }
+
         int count = 0;
         for (String word : words) {
             boolean found = false;
             for (char c : word.toCharArray()) {
-                if (!allowed.contains("" + c)) {
+                if (!allowedLetters.contains(c)) {
                     found = true;
                     break;
                 }
