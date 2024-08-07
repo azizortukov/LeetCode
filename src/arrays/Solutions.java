@@ -897,4 +897,26 @@ public class Solutions {
 
     }
 
+    /*
+    1684. Count the Number of Consistent Strings
+    For more info: https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
+     */
+
+    public int countConsistentStrings(String allowed, String[] words) {
+        int count = 0;
+        for (String word : words) {
+            boolean found = false;
+            for (char c : word.toCharArray()) {
+                if (!allowed.contains("" + c)) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }
