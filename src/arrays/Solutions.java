@@ -869,4 +869,32 @@ public class Solutions {
         return time;
     }
 
+    /*
+    2956. Find Common Elements Between Two Arrays
+    For more info: https://leetcode.com/problems/find-common-elements-between-two-arrays/description/
+     */
+
+    public int[] findIntersectionValues(int[] nums1, int[] nums2) {
+        int count1 = 0;
+        int count2 = 0;
+        for (int value : nums1) {
+            for (int k : nums2) {
+                if (value == k) {
+                    count1++;
+                    break;
+                }
+            }
+        }
+        for (int k : nums2) {
+            for (int i : nums1) {
+                if (k == i) {
+                    count2++;
+                    break;
+                }
+            }
+        }
+        return new int[]{count1, count2};
+
+    }
+
 }
