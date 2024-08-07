@@ -558,7 +558,7 @@ public class Solutions {
         for (String s : word2) {
             second.append(s);
         }
-        return first.toString().equals(second.toString());
+        return first.toString().contentEquals(second);
     }
 
     /*
@@ -754,8 +754,8 @@ public class Solutions {
 
     public int numberOfBeams(String[] bank) {
         List<Integer> laserPoints = new ArrayList<>();
-        for (int i = 0; i < bank.length; i++) {
-            int count = countLaserPoints(bank[i]);
+        for (String s : bank) {
+            int count = countLaserPoints(s);
             if (count == 0) {
                 continue;
             }
@@ -922,6 +922,29 @@ public class Solutions {
             }
         }
         return count;
+    }
+
+    /*
+    2161. Partition Array According to Given Pivot
+    For more info: https://leetcode.com/problems/partition-array-according-to-given-pivot/description
+     */
+
+    public int[] pivotArray(int[] nums, int pivot) {
+        int counter = 0;
+        int[] res = new int[nums.length];
+        for (int num : nums) {
+            if (num < pivot)
+                res[counter++] = num;
+        }
+        for (int num : nums) {
+            if (num == pivot)
+                res[counter++] = num;
+        }
+        for (int num : nums) {
+            if (num > pivot)
+                res[counter++] = num;
+        }
+        return res;
     }
 
 }
