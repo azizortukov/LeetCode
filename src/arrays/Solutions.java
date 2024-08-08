@@ -947,4 +947,21 @@ public class Solutions {
         return res;
     }
 
+    /*
+    1732. Find the Highest Altitude
+    For more info: https://leetcode.com/problems/find-the-highest-altitude/description/
+     */
+
+    public int largestAltitude(int[] gain) {
+        int max = 0;
+        int overallGain = 0;
+        for (int m : gain) {
+            overallGain += m;
+            if (max < overallGain) {
+                max = overallGain;
+            }
+        }
+        return max;
+    }
+
 }

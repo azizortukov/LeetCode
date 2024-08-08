@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(Arrays.toString(solution.pivotArray(
-                new int[]{9, 12, 5, 10, 14, 3, 10}, 10
-        )));
+        System.out.println(solution.largestAltitude(
+                new int[]{28, 0, -8, -99, 11, 62, -35, 68, 2, 12, -71, 13, 66, -28}
+        ));
     }
 
 }
