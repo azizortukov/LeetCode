@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.diagonalSum(new int[][]{
-                {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}
-        }));
+        System.out.println(solution.isAcronym(
+                List.of("alice", "bob", "charlie"), "abc"
+        ));
     }
 
 }
