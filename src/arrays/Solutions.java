@@ -1016,4 +1016,27 @@ public class Solutions {
         return singleDigitSum != doubleDigitSum;
     }
 
+    /*
+    804. Unique Morse Code Words
+    For more info: https://leetcode.com/problems/unique-morse-code-words/description
+     */
+
+    public int uniqueMorseRepresentations(String[] words) {
+        String[] morseCode = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..",
+                ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-",
+                "..-", "...-", ".--", "-..-", "-.--", "--.."};
+
+        Set<String> res = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
+        for (String word : words) {
+            for (char c : word.toCharArray()) {
+                int i = c - 'a';
+                sb.append(morseCode[i]);
+            }
+            res.add(sb.toString());
+            sb.setLength(0);
+        }
+        return res.size();
+    }
+
 }
