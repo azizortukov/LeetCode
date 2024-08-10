@@ -998,4 +998,22 @@ public class Solutions {
         return true;
     }
 
+    /*
+    3232. Find if Digit Game Can Be Won
+    For more info: https://leetcode.com/problems/find-if-digit-game-can-be-won/description
+     */
+
+    public boolean canAliceWin(int[] nums) {
+        int singleDigitSum = 0;
+        int doubleDigitSum = 0;
+        for (int num : nums) {
+            if (num / 10 == 0) {
+                singleDigitSum += num;
+            } else {
+                doubleDigitSum += num;
+            }
+        }
+        return singleDigitSum != doubleDigitSum;
+    }
+
 }

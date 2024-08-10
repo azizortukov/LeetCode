@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.isAcronym(
-                List.of("alice", "bob", "charlie"), "abc"
+        System.out.println(solution.canAliceWin(
+                new int[]{1, 2, 3, 4, 5, 14}
         ));
     }
 
