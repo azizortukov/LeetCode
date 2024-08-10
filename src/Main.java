@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.uniqueMorseRepresentations(
-                new String[]{"gin", "zen", "gig", "msg"}
+        System.out.println(solution.maxProductDifference(
+                new int[]{5, 6, 2, 7, 4}
         ));
     }
 
