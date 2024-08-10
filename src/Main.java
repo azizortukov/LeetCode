@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
         Solutions solution = new Solutions();
-        System.out.println(solution.maxProductDifference(
-                new int[]{5, 6, 2, 7, 4}
+        System.out.println(solution.maxProduct(
+                new int[]{3, 4, 5, 2}
         ));
     }
 
