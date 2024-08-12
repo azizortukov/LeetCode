@@ -1,12 +1,12 @@
-import arrays.easy.ArraysSolutions;
+import arrays.medium.ArraysSolutions;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         ArraysSolutions solution = new ArraysSolutions();
-        System.out.println(solution.maxProduct(
-                new int[]{3, 4, 5, 2}
+        System.out.println(solution.maxCoins(
+                new int[]{2,4,1,2,7,8}
         ));
     }
 

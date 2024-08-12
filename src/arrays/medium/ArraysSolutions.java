@@ -224,4 +224,20 @@ public class ArraysSolutions {
         return res;
     }
 
+    /*
+    1561. Maximum Number of Coins You Can Get
+    For more info: https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description
+     */
+
+    public int maxCoins(int[] piles) {
+        Arrays.sort(piles);
+        int res = 0;
+        int n = piles.length - 1;
+        for (int i = 0; i < n; i++) {
+            res += piles[n - 1];
+            n -= 2;
+        }
+        return res;
+    }
+
 }
