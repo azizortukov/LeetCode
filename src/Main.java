@@ -1,13 +1,13 @@
 import arrays.medium.ArraysSolutions;
 
-import java.io.IOException;
+import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         ArraysSolutions solution = new ArraysSolutions();
-        System.out.println(solution.maxCoins(
-                new int[]{2,4,1,2,7,8}
-        ));
+        System.out.println(Arrays.toString(solution.processQueries(
+                new int[]{3, 1, 2, 1}, 5
+        )));
     }
 
 }
