@@ -261,4 +261,25 @@ public class ArraysSolutions {
         return res;
     }
 
+    /*
+    2149. Rearrange Array Elements by Sign
+    For more info: https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
+     */
+
+    public int[] rearrangeArray(int[] nums) {
+        int[] ans = new int[nums.length];
+        int evenIndex = 0;
+        int oddIndex = 1;
+        for (int num : nums) {
+            if (num > 0) {
+                ans[evenIndex] = num;
+                evenIndex += 2;
+            } else {
+                ans[oddIndex] = num;
+                oddIndex += 2;
+            }
+        }
+        return ans;
+    }
+
 }
