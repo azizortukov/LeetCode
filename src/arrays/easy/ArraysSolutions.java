@@ -862,4 +862,19 @@ public class ArraysSolutions {
         return (max1 - 1) * (max2 - 1);
     }
 
+    /*
+    1266. Minimum Time Visiting All Points
+    For more info: https://leetcode.com/problems/minimum-time-visiting-all-points/description/
+     */
+
+    public int minTimeToVisitAllPoints(int[][] points) {
+        int count = 0;
+        for (int i = 0; i < points.length - 1; i++) {
+            int firstRes = Math.abs(points[i][0] - points[i + 1][0]);
+            int secondRes = Math.abs(points[i][1] - points[i + 1][1]);
+            count += Math.max(firstRes, secondRes);
+        }
+        return count;
+    }
+
 }
