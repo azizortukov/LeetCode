@@ -6,7 +6,7 @@ public class GetConcatenation {
 
     /**
      1929. Concatenation of Array
-     <a href="https://leetcode.com/problems/concatenation-of-array/description">For more info</a>
+     <a href="https://leetcode.com/problems/concatenation-of-array/description">Leetcode description</a>
      */
 
     public int[] getConcatenation(int[] nums) {
@@ -15,40 +15,6 @@ public class GetConcatenation {
         System.arraycopy(nums, 0, result, 0, length);
         System.arraycopy(nums, 0, result, length, length);
         return result;
-    }
-
-    /**
-    1512. Number of Good Pairs
-    https://leetcode.com/problems/number-of-good-pairs/description
-     */
-
-    public int numIdenticalPairs(int[] nums) {
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] == nums[j]) {
-                    count++;
-                }
-            }
-        }
-        return count;
-    }
-
-    /**
-    2011. Final Value of Variable After Performing Operations
-    https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description
-     */
-
-    public int finalValueAfterOperations(String[] operations) {
-        int sum = 0;
-        for (String operation : operations) {
-            if (operation.startsWith("+") || operation.endsWith("+")) {
-                sum += 1;
-            } else if (operation.startsWith("-") || operation.endsWith("-")) {
-                sum -= 1;
-            }
-        }
-        return sum;
     }
 
     /**
