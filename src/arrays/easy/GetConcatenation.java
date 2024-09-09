@@ -2,11 +2,11 @@ package arrays.easy;
 
 import java.util.*;
 
-public class ArraysSolutions {
+public class GetConcatenation {
 
-    /*
-    1929. Concatenation of Array
-    For more info: https://leetcode.com/problems/concatenation-of-array/description
+    /**
+     1929. Concatenation of Array
+     <a href="https://leetcode.com/problems/concatenation-of-array/description">For more info</a>
      */
 
     public int[] getConcatenation(int[] nums) {
@@ -17,28 +17,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
-    1920. Build Array from Permutation
-    For more info: https://leetcode.com/problems/build-array-from-permutation/description
-     */
-
-    public int[] buildArray(int[] nums) {
-        recurseBuilder(nums, 0);
-        return nums;
-    }
-
-    private void recurseBuilder(int[] nums, int i) {
-        if (i < nums.length) {
-            int temp = nums[i];
-            int res = nums[temp];
-            recurseBuilder(nums, i + 1);
-            nums[i] = res;
-        }
-    }
-
-    /*
+    /**
     1512. Number of Good Pairs
-    For more info: https://leetcode.com/problems/number-of-good-pairs/description
+    https://leetcode.com/problems/number-of-good-pairs/description
      */
 
     public int numIdenticalPairs(int[] nums) {
@@ -53,9 +34,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     2011. Final Value of Variable After Performing Operations
-    For more info: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description
+    https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description
      */
 
     public int finalValueAfterOperations(String[] operations) {
@@ -70,9 +51,9 @@ public class ArraysSolutions {
         return sum;
     }
 
-    /*
+    /**
     1470. Shuffle the Array
-    For more info: https://leetcode.com/problems/shuffle-the-array/description
+    https://leetcode.com/problems/shuffle-the-array/description
      */
 
     public int[] shuffle(int[] nums, int n) {
@@ -85,9 +66,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
+    /**
     2942. Find Words Containing Character
-    For more info: https://leetcode.com/problems/find-words-containing-character/description
+    https://leetcode.com/problems/find-words-containing-character/description
      */
 
     public List<Integer> findWordsContaining(String[] words, char x) {
@@ -101,9 +82,9 @@ public class ArraysSolutions {
         return list;
     }
 
-    /*
+    /**
     1672. Richest Customer Wealth
-    For more info: https://leetcode.com/problems/richest-customer-wealth/description
+    https://leetcode.com/problems/richest-customer-wealth/description
      */
 
     public int maximumWealth(int[][] accounts) {
@@ -118,9 +99,9 @@ public class ArraysSolutions {
         return maxWealth;
     }
 
-    /*
+    /**
     2037. Minimum Number of Moves to Seat Everyone
-    For more info: https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description
+    https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description
      */
 
     public int minMovesToSeat(int[] seats, int[] students) {
@@ -133,9 +114,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     2798. Number of Employees Who Met the Target
-    For more info: https://leetcode.com/problems/number-of-employees-who-met-the-target/description
+    https://leetcode.com/problems/number-of-employees-who-met-the-target/description
      */
 
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
@@ -148,9 +129,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     1431. Kids With the Greatest Number of Candies
-    For more info: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description
+    https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description
      */
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
@@ -171,9 +152,9 @@ public class ArraysSolutions {
         return list;
     }
 
-    /*
+    /**
     1. Two Sum
-    For more info: https://leetcode.com/problems/two-sum/description
+    https://leetcode.com/problems/two-sum/description
      */
 
     public int[] twoSum(int[] nums, int target) {
@@ -191,9 +172,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
+    /**
     9. Palindrome Number
-    For more info: https://leetcode.com/problems/palindrome-number/description
+    https://leetcode.com/problems/palindrome-number/description
      */
 
     public boolean isPalindrome(int x) {
@@ -205,9 +186,9 @@ public class ArraysSolutions {
         return true;
     }
 
-    /*
+    /**
     1637. Widest Vertical Area Between Two Points Containing No Points
-    For more info: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
+    https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
      */
 
     public int maxWidthOfVerticalArea(int[][] points) {
@@ -228,9 +209,9 @@ public class ArraysSolutions {
         return maxWidth;
     }
 
-    /*
+    /**
     2824. Count Pairs Whose Sum is Less than Target
-    For more info: https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description
+    https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description
      */
 
     public int countPairs(List<Integer> nums, int target) {
@@ -245,9 +226,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     1365. How Many Numbers Are Smaller Than the Current Number
-    For more info: https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description
+    https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description
      */
 
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -264,9 +245,9 @@ public class ArraysSolutions {
         return ans;
     }
 
-    /*
+    /**
     1480. Running Sum of 1d Array
-    For more info: https://leetcode.com/problems/running-sum-of-1d-array/description
+    https://leetcode.com/problems/running-sum-of-1d-array/description
      */
 
     public int[] runningSum(int[] nums) {
@@ -279,9 +260,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
+    /**
     2574. Left and Right Sum Differences
-    For more info: https://leetcode.com/problems/left-and-right-sum-differences/description
+    https://leetcode.com/problems/left-and-right-sum-differences/description
      */
 
     public int[] leftRightDifference(int[] nums) {
@@ -308,9 +289,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
+    /**
     2859. Sum of Values at Indices With K Set Bits
-    For more info: https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/description
+    https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/description
      */
     public int sumIndicesWithKSetBits(List<Integer> nums, int k) {
         int sum = 0;
@@ -322,9 +303,9 @@ public class ArraysSolutions {
         return sum;
     }
 
-    /*
+    /**
     2114. Maximum Number of Words Found in Sentences
-    For more info: https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description
+    https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description
      */
 
     public int mostWordsFound(String[] sentences) {
@@ -338,9 +319,9 @@ public class ArraysSolutions {
         return biggest;
     }
 
-    /*
+    /**
     3162. Find the Number of Good Pairs I
-    For more info: https://leetcode.com/problems/find-the-number-of-good-pairs-i/description
+    https://leetcode.com/problems/find-the-number-of-good-pairs-i/description
      */
 
     public int numberOfPairs(int[] nums1, int[] nums2, int k) {
@@ -355,9 +336,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     3065. Minimum Operations to Exceed Threshold Value I
-    For more info: https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
+    https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
      */
 
     public int minOperations(int[] nums, int k) {
@@ -370,9 +351,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     1389. Create Target Array in the Given Order
-    For more info: https://leetcode.com/problems/create-target-array-in-the-given-order/description
+    https://leetcode.com/problems/create-target-array-in-the-given-order/description
      */
 
     public int[] createTargetArray(int[] nums, int[] index) {
@@ -390,9 +371,9 @@ public class ArraysSolutions {
         return targetArray;
     }
 
-    /*
+    /**
     747. Largest Number At Least Twice of Others
-    For more info: https://leetcode.com/problems/largest-number-at-least-twice-of-others/description
+    https://leetcode.com/problems/largest-number-at-least-twice-of-others/description
      */
 
     public int dominantIndex(int[] nums) {
@@ -415,9 +396,9 @@ public class ArraysSolutions {
         }
     }
 
-    /*
+    /**
     2418. Sort the People
-    For more info: https://leetcode.com/problems/sort-the-people/description/
+    https://leetcode.com/problems/sort-the-people/description/
      */
 
     public String[] sortPeople(String[] names, int[] heights) {
@@ -432,9 +413,9 @@ public class ArraysSolutions {
         return names;
     }
 
-    /*
+    /**
     1773. Count Items Matching a Rule
-    For more info: https://leetcode.com/problems/count-items-matching-a-rule/description
+    https://leetcode.com/problems/count-items-matching-a-rule/description
      */
 
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
@@ -462,9 +443,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     1816. Truncate Sentence
-    For more info: https://leetcode.com/problems/truncate-sentence/description
+    https://leetcode.com/problems/truncate-sentence/description
      */
 
     public String truncateSentence(String s, int k) {
@@ -487,9 +468,9 @@ public class ArraysSolutions {
         return s.substring(0, i);
     }
 
-    /*
+    /**
     2974. Minimum Number Game
-    For more info: https://leetcode.com/problems/minimum-number-game/description/
+    https://leetcode.com/problems/minimum-number-game/description/
      */
 
     public int[] numberGame(int[] nums) {
@@ -502,9 +483,9 @@ public class ArraysSolutions {
         return nums;
     }
 
-    /*
+    /**
     3194. Minimum Average of Smallest and Largest Elements
-    For more info: https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description
+    https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description
      */
 
     public double minimumAverage(int[] nums) {
@@ -520,9 +501,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     1662. Check If Two String Arrays are Equivalent
-    For more info: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description
+    https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description
      */
 
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
@@ -537,9 +518,9 @@ public class ArraysSolutions {
         return first.toString().contentEquals(second);
     }
 
-    /*
+    /**
     1313. Decompress Run-Length Encoded List
-    For more info: https://leetcode.com/problems/decompress-run-length-encoded-list/description
+    https://leetcode.com/problems/decompress-run-length-encoded-list/description
      */
 
     public int[] decompressRLElist(int[] nums) {
@@ -556,9 +537,9 @@ public class ArraysSolutions {
         return result;
     }
 
-    /*
+    /**
     1528. Shuffle String
-    For more info: https://leetcode.com/problems/shuffle-string/description
+    https://leetcode.com/problems/shuffle-string/description
      */
 
     public String restoreString(String s, int[] indices) {
@@ -569,9 +550,9 @@ public class ArraysSolutions {
         return new String(res);
     }
 
-    /*
+    /**
     2535. Difference Between Element Sum and Digit Sum of an Array
-    For more info: https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description
+    https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description
      */
 
     public int differenceOfSum(int[] nums) {
@@ -587,9 +568,9 @@ public class ArraysSolutions {
         return overallSum - digitSum;
     }
 
-    /*
+    /**
     2367. Number of Arithmetic Triplets
-    For more info: https://leetcode.com/problems/number-of-arithmetic-triplets/description
+    https://leetcode.com/problems/number-of-arithmetic-triplets/description
      */
 
     public int arithmeticTriplets(int[] nums, int diff) {
@@ -606,9 +587,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     2006. Count Number of Pairs With Absolute Difference K
-    For more info: https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description
+    https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description
      */
 
     public int countKDifference(int[] nums, int k) {
@@ -623,9 +604,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     2108. Find First Palindromic String in the Array
-    For more info: https://leetcode.com/problems/find-first-palindromic-string-in-the-array
+    https://leetcode.com/problems/find-first-palindromic-string-in-the-array
      */
 
     public String firstPalindrome(String[] words) {
@@ -646,9 +627,9 @@ public class ArraysSolutions {
         return true;
     }
 
-    /*
+    /**
     1496. Path Crossing
-    For more info: https://leetcode.com/problems/path-crossing/description/
+    https://leetcode.com/problems/path-crossing/description/
      */
     public boolean isPathCrossing(String path) {
         int x = 0;
@@ -672,9 +653,9 @@ public class ArraysSolutions {
         return false;
     }
 
-    /*
+    /**
     2956. Find Common Elements Between Two Arrays
-    For more info: https://leetcode.com/problems/find-common-elements-between-two-arrays/description/
+    https://leetcode.com/problems/find-common-elements-between-two-arrays/description/
      */
 
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
@@ -700,9 +681,9 @@ public class ArraysSolutions {
 
     }
 
-    /*
+    /**
     1684. Count the Number of Consistent Strings
-    For more info: https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
+    https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
      */
 
     public int countConsistentStrings(String allowed, String[] words) {
@@ -727,9 +708,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     1732. Find the Highest Altitude
-    For more info: https://leetcode.com/problems/find-the-highest-altitude/description/
+    https://leetcode.com/problems/find-the-highest-altitude/description/
      */
 
     public int largestAltitude(int[] gain) {
@@ -744,9 +725,9 @@ public class ArraysSolutions {
         return max;
     }
 
-    /*
+    /**
     1572. Matrix Diagonal Sum
-    For more info: https://leetcode.com/problems/matrix-diagonal-sum/description/
+    https://leetcode.com/problems/matrix-diagonal-sum/description/
      */
 
     public int diagonalSum(int[][] mat) {
@@ -761,9 +742,9 @@ public class ArraysSolutions {
         return sum;
     }
 
-    /*
+    /**
     2828. Check if a String Is an Acronym of Words
-    For more info: https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/description/
+    https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/description/
      */
 
     public boolean isAcronym(List<String> words, String s) {
@@ -778,9 +759,9 @@ public class ArraysSolutions {
         return true;
     }
 
-    /*
+    /**
     3232. Find if Digit Game Can Be Won
-    For more info: https://leetcode.com/problems/find-if-digit-game-can-be-won/description
+    https://leetcode.com/problems/find-if-digit-game-can-be-won/description
      */
 
     public boolean canAliceWin(int[] nums) {
@@ -796,9 +777,9 @@ public class ArraysSolutions {
         return singleDigitSum != doubleDigitSum;
     }
 
-    /*
+    /**
     804. Unique Morse Code Words
-    For more info: https://leetcode.com/problems/unique-morse-code-words/description
+    https://leetcode.com/problems/unique-morse-code-words/description
      */
 
     public int uniqueMorseRepresentations(String[] words) {
@@ -819,9 +800,9 @@ public class ArraysSolutions {
         return res.size();
     }
 
-    /*
+    /**
     1913. Maximum Product Difference Between Two Pairs
-    For more info: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description
+    https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description
      */
 
     public int maxProductDifference(int[] nums) {
@@ -844,9 +825,9 @@ public class ArraysSolutions {
         return (max1 * max2) - (min1 * min2);
     }
 
-    /*
+    /**
     1464. Maximum Product of Two Elements in an Array
-    For more info: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
+    https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
      */
 
     public int maxProduct(int[] nums) {
@@ -862,9 +843,9 @@ public class ArraysSolutions {
         return (max1 - 1) * (max2 - 1);
     }
 
-    /*
+    /**
     1266. Minimum Time Visiting All Points
-    For more info: https://leetcode.com/problems/minimum-time-visiting-all-points/description/
+    https://leetcode.com/problems/minimum-time-visiting-all-points/description/
      */
 
     public int minTimeToVisitAllPoints(int[][] points) {
