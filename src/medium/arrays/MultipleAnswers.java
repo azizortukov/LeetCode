@@ -1,21 +1,21 @@
-package arrays.medium;
+package medium.arrays;
 
 import java.util.*;
 
-public class ArraysSolutions {
+public class MultipleAnswers {
 
-    /*
+    /**
     912. Sort an Array
-    For more info: https://leetcode.com/problems/sort-an-array/description
+    <a href="https://leetcode.com/problems/sort-an-array/description">LeetCode description</a>
      */
     public int[] sortArray(int[] nums) {
         Arrays.sort(nums);
         return nums;
     }
 
-    /*
+    /**
     2433. Find The Original Array of Prefix Xor
-    For more info: https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description
+    <a href="https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description">LeetCode description</a>
     */
 
     public int[] findArray(int[] pref) {
@@ -28,9 +28,9 @@ public class ArraysSolutions {
         return arr;
     }
 
-    /*
+    /**
     1282. Group the People Given the Group Size They Belong To
-    For more info: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description
+    <a href="https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description">LeetCode description</a>
      */
 
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
@@ -56,9 +56,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     2610. Convert an Array Into a 2D Array With Conditions
-    For more info: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description
+    <a href="https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/description">LeetCode description</a>
      */
 
     public List<List<Integer>> findMatrix(int[] nums) {
@@ -84,9 +84,9 @@ public class ArraysSolutions {
         addToMatrix(nums, res);
     }
 
-    /*
+    /**
     1769. Minimum Number of Operations to Move All Balls to Each Box
-    For more info: https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description/
+    <a href="https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/description">LeetCode description</a>
      */
 
     public int[] minOperations(String boxes) {
@@ -105,9 +105,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     2125. Number of Laser Beams in a Bank
-    For more info: https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description
+    <a href="https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description">LeetCode description</a>
      */
 
     public int numberOfBeams(String[] bank) {
@@ -137,9 +137,9 @@ public class ArraysSolutions {
         return count;
     }
 
-    /*
+    /**
     2545. Sort the Students by Their Kth Score
-    For more info: https://leetcode.com/problems/sort-the-students-by-their-kth-score/description
+    <a href="https://leetcode.com/problems/sort-the-students-by-their-kth-score/description">LeetCode description</a>
      */
 
     public int[][] sortTheStudents(int[][] score, int k) {
@@ -156,9 +156,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     2391. Minimum Amount of Time to Collect Garbage
-    For more info: https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description
+    <a href="https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/description">LeetCode description</a>
      */
 
     public int garbageCollection(String[] garbage, int[] travel) {
@@ -201,9 +201,9 @@ public class ArraysSolutions {
         return time;
     }
 
-    /*
+    /**
     2161. Partition Array According to Given Pivot
-    For more info: https://leetcode.com/problems/partition-array-according-to-given-pivot/description
+    <a href="https://leetcode.com/problems/partition-array-according-to-given-pivot/description">LeetCode description</a>
      */
 
     public int[] pivotArray(int[] nums, int pivot) {
@@ -224,9 +224,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     1561. Maximum Number of Coins You Can Get
-    For more info: https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description
+    <a href="https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description">LeetCode description</a>
      */
 
     public int maxCoins(int[] piles) {
@@ -240,9 +240,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     1409. Queries on a Permutation With Key
-    For more info: https://leetcode.com/problems/queries-on-a-permutation-with-key/description/
+    <a href="https://leetcode.com/problems/queries-on-a-permutation-with-key/description">LeetCode description</a>
      */
 
     public int[] processQueries(int[] queries, int m) {
@@ -261,9 +261,9 @@ public class ArraysSolutions {
         return res;
     }
 
-    /*
+    /**
     2149. Rearrange Array Elements by Sign
-    For more info: https://leetcode.com/problems/rearrange-array-elements-by-sign/description/
+    <a href="https://leetcode.com/problems/rearrange-array-elements-by-sign/description">LeetCode description</a>
      */
 
     public int[] rearrangeArray(int[] nums) {

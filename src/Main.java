@@ -1,4 +1,4 @@
-import arrays.easy.MaxProfit;
+import easy.arrays.MaxProfit;
 
 public class Main {
 

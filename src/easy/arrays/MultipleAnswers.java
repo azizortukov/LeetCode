@@ -1,12 +1,12 @@
-package arrays.easy;
+package easy.arrays;
 
 import java.util.*;
 
-public class GetConcatenation {
+public class MultipleAnswers {
 
     /**
      1929. Concatenation of Array
-     <a href="https://leetcode.com/problems/concatenation-of-array/description">Leetcode description</a>
+     <a href="https://leetcode.com/problems/concatenation-of-array/description>LeetCode description</a>
      */
 
     public int[] getConcatenation(int[] nums) {
@@ -19,7 +19,7 @@ public class GetConcatenation {
 
     /**
     1470. Shuffle the Array
-    https://leetcode.com/problems/shuffle-the-array/description
+    <a href="https://leetcode.com/problems/shuffle-the-array/description>LeetCode description</a>
      */
 
     public int[] shuffle(int[] nums, int n) {
@@ -34,7 +34,7 @@ public class GetConcatenation {
 
     /**
     2942. Find Words Containing Character
-    https://leetcode.com/problems/find-words-containing-character/description
+    <a href="https://leetcode.com/problems/find-words-containing-character/description>LeetCode description</a>
      */
 
     public List<Integer> findWordsContaining(String[] words, char x) {
@@ -50,7 +50,7 @@ public class GetConcatenation {
 
     /**
     1672. Richest Customer Wealth
-    https://leetcode.com/problems/richest-customer-wealth/description
+    <a href="https://leetcode.com/problems/richest-customer-wealth/description>LeetCode description</a>
      */
 
     public int maximumWealth(int[][] accounts) {
@@ -67,7 +67,7 @@ public class GetConcatenation {
 
     /**
     2037. Minimum Number of Moves to Seat Everyone
-    https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description
+    <a href="https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/description>LeetCode description</a>
      */
 
     public int minMovesToSeat(int[] seats, int[] students) {
@@ -82,7 +82,7 @@ public class GetConcatenation {
 
     /**
     2798. Number of Employees Who Met the Target
-    https://leetcode.com/problems/number-of-employees-who-met-the-target/description
+    <a href="https://leetcode.com/problems/number-of-employees-who-met-the-target/description>LeetCode description</a>
      */
 
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
@@ -97,7 +97,7 @@ public class GetConcatenation {
 
     /**
     1431. Kids With the Greatest Number of Candies
-    https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description
+    <a href="https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description>LeetCode description</a>
      */
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
@@ -120,7 +120,7 @@ public class GetConcatenation {
 
     /**
     1. Two Sum
-    https://leetcode.com/problems/two-sum/description
+    <a href="https://leetcode.com/problems/two-sum/description>LeetCode description</a>
      */
 
     public int[] twoSum(int[] nums, int target) {
@@ -140,7 +140,7 @@ public class GetConcatenation {
 
     /**
     9. Palindrome Number
-    https://leetcode.com/problems/palindrome-number/description
+    <a href="https://leetcode.com/problems/palindrome-number/description>LeetCode description</a>
      */
 
     public boolean isPalindrome(int x) {
@@ -154,7 +154,7 @@ public class GetConcatenation {
 
     /**
     1637. Widest Vertical Area Between Two Points Containing No Points
-    https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
+    <a href="https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description>LeetCode description</a>
      */
 
     public int maxWidthOfVerticalArea(int[][] points) {
@@ -177,7 +177,7 @@ public class GetConcatenation {
 
     /**
     2824. Count Pairs Whose Sum is Less than Target
-    https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description
+    <a href="https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description>LeetCode description</a>
      */
 
     public int countPairs(List<Integer> nums, int target) {
@@ -194,7 +194,7 @@ public class GetConcatenation {
 
     /**
     1365. How Many Numbers Are Smaller Than the Current Number
-    https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description
+    <a href="https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description>LeetCode description</a>
      */
 
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -213,7 +213,7 @@ public class GetConcatenation {
 
     /**
     1480. Running Sum of 1d Array
-    https://leetcode.com/problems/running-sum-of-1d-array/description
+    <a href="https://leetcode.com/problems/running-sum-of-1d-array/description>LeetCode description</a>
      */
 
     public int[] runningSum(int[] nums) {
@@ -228,7 +228,7 @@ public class GetConcatenation {
 
     /**
     2574. Left and Right Sum Differences
-    https://leetcode.com/problems/left-and-right-sum-differences/description
+    <a href="https://leetcode.com/problems/left-and-right-sum-differences/description>LeetCode description</a>
      */
 
     public int[] leftRightDifference(int[] nums) {
@@ -257,7 +257,7 @@ public class GetConcatenation {
 
     /**
     2859. Sum of Values at Indices With K Set Bits
-    https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/description
+    <a href="https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/description>LeetCode description</a>
      */
     public int sumIndicesWithKSetBits(List<Integer> nums, int k) {
         int sum = 0;
@@ -271,7 +271,7 @@ public class GetConcatenation {
 
     /**
     2114. Maximum Number of Words Found in Sentences
-    https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description
+    <a href="https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/description>LeetCode description</a>
      */
 
     public int mostWordsFound(String[] sentences) {
@@ -287,7 +287,7 @@ public class GetConcatenation {
 
     /**
     3162. Find the Number of Good Pairs I
-    https://leetcode.com/problems/find-the-number-of-good-pairs-i/description
+    <a href="https://leetcode.com/problems/find-the-number-of-good-pairs-i/description>LeetCode description</a>
      */
 
     public int numberOfPairs(int[] nums1, int[] nums2, int k) {
@@ -304,7 +304,7 @@ public class GetConcatenation {
 
     /**
     3065. Minimum Operations to Exceed Threshold Value I
-    https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description
+    <a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/description>LeetCode description</a>
      */
 
     public int minOperations(int[] nums, int k) {
@@ -319,7 +319,7 @@ public class GetConcatenation {
 
     /**
     1389. Create Target Array in the Given Order
-    https://leetcode.com/problems/create-target-array-in-the-given-order/description
+    <a href="https://leetcode.com/problems/create-target-array-in-the-given-order/description>LeetCode description</a>
      */
 
     public int[] createTargetArray(int[] nums, int[] index) {
@@ -339,7 +339,7 @@ public class GetConcatenation {
 
     /**
     747. Largest Number At Least Twice of Others
-    https://leetcode.com/problems/largest-number-at-least-twice-of-others/description
+    <a href="https://leetcode.com/problems/largest-number-at-least-twice-of-others/description>LeetCode description</a>
      */
 
     public int dominantIndex(int[] nums) {
@@ -364,7 +364,7 @@ public class GetConcatenation {
 
     /**
     2418. Sort the People
-    https://leetcode.com/problems/sort-the-people/description/
+    <a href="https://leetcode.com/problems/sort-the-people/description>LeetCode description</a>
      */
 
     public String[] sortPeople(String[] names, int[] heights) {
@@ -381,7 +381,7 @@ public class GetConcatenation {
 
     /**
     1773. Count Items Matching a Rule
-    https://leetcode.com/problems/count-items-matching-a-rule/description
+    <a href="https://leetcode.com/problems/count-items-matching-a-rule/description>LeetCode description</a>
      */
 
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
@@ -411,7 +411,7 @@ public class GetConcatenation {
 
     /**
     1816. Truncate Sentence
-    https://leetcode.com/problems/truncate-sentence/description
+    <a href="https://leetcode.com/problems/truncate-sentence/description>LeetCode description</a>
      */
 
     public String truncateSentence(String s, int k) {
@@ -436,7 +436,7 @@ public class GetConcatenation {
 
     /**
     2974. Minimum Number Game
-    https://leetcode.com/problems/minimum-number-game/description/
+    <a href="https://leetcode.com/problems/minimum-number-game/description>LeetCode description</a>
      */
 
     public int[] numberGame(int[] nums) {
@@ -451,7 +451,7 @@ public class GetConcatenation {
 
     /**
     3194. Minimum Average of Smallest and Largest Elements
-    https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description
+    <a href="https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description>LeetCode description</a>
      */
 
     public double minimumAverage(int[] nums) {
@@ -469,7 +469,7 @@ public class GetConcatenation {
 
     /**
     1662. Check If Two String Arrays are Equivalent
-    https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description
+    <a href="https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description>LeetCode description</a>
      */
 
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
@@ -486,7 +486,7 @@ public class GetConcatenation {
 
     /**
     1313. Decompress Run-Length Encoded List
-    https://leetcode.com/problems/decompress-run-length-encoded-list/description
+    <a href="https://leetcode.com/problems/decompress-run-length-encoded-list/description>LeetCode description</a>
      */
 
     public int[] decompressRLElist(int[] nums) {
@@ -505,7 +505,7 @@ public class GetConcatenation {
 
     /**
     1528. Shuffle String
-    https://leetcode.com/problems/shuffle-string/description
+    <a href="https://leetcode.com/problems/shuffle-string/description>LeetCode description</a>
      */
 
     public String restoreString(String s, int[] indices) {
@@ -518,7 +518,7 @@ public class GetConcatenation {
 
     /**
     2535. Difference Between Element Sum and Digit Sum of an Array
-    https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description
+    <a href="https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description>LeetCode description</a>
      */
 
     public int differenceOfSum(int[] nums) {
@@ -536,7 +536,7 @@ public class GetConcatenation {
 
     /**
     2367. Number of Arithmetic Triplets
-    https://leetcode.com/problems/number-of-arithmetic-triplets/description
+    <a href="https://leetcode.com/problems/number-of-arithmetic-triplets/description>LeetCode description</a>
      */
 
     public int arithmeticTriplets(int[] nums, int diff) {
@@ -555,7 +555,7 @@ public class GetConcatenation {
 
     /**
     2006. Count Number of Pairs With Absolute Difference K
-    https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description
+    <a href="https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description>LeetCode description</a>
      */
 
     public int countKDifference(int[] nums, int k) {
@@ -572,7 +572,7 @@ public class GetConcatenation {
 
     /**
     2108. Find First Palindromic String in the Array
-    https://leetcode.com/problems/find-first-palindromic-string-in-the-array
+    <a href="https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description>LeetCode description</a>
      */
 
     public String firstPalindrome(String[] words) {
@@ -595,7 +595,7 @@ public class GetConcatenation {
 
     /**
     1496. Path Crossing
-    https://leetcode.com/problems/path-crossing/description/
+    <a href="https://leetcode.com/problems/path-crossing/description>LeetCode description</a>
      */
     public boolean isPathCrossing(String path) {
         int x = 0;
@@ -621,7 +621,7 @@ public class GetConcatenation {
 
     /**
     2956. Find Common Elements Between Two Arrays
-    https://leetcode.com/problems/find-common-elements-between-two-arrays/description/
+    <a href="https://leetcode.com/problems/find-common-elements-between-two-arrays/description>LeetCode description</a>
      */
 
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
@@ -649,7 +649,7 @@ public class GetConcatenation {
 
     /**
     1684. Count the Number of Consistent Strings
-    https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
+    <a href="https://leetcode.com/problems/count-the-number-of-consistent-strings/description>LeetCode description</a>
      */
 
     public int countConsistentStrings(String allowed, String[] words) {
@@ -676,7 +676,7 @@ public class GetConcatenation {
 
     /**
     1732. Find the Highest Altitude
-    https://leetcode.com/problems/find-the-highest-altitude/description/
+    <a href="https://leetcode.com/problems/find-the-highest-altitude/description>LeetCode description</a>
      */
 
     public int largestAltitude(int[] gain) {
@@ -693,7 +693,7 @@ public class GetConcatenation {
 
     /**
     1572. Matrix Diagonal Sum
-    https://leetcode.com/problems/matrix-diagonal-sum/description/
+    <a href="https://leetcode.com/problems/matrix-diagonal-sum/description>LeetCode description</a>
      */
 
     public int diagonalSum(int[][] mat) {
@@ -710,7 +710,7 @@ public class GetConcatenation {
 
     /**
     2828. Check if a String Is an Acronym of Words
-    https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/description/
+    <a href="https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/description>LeetCode description</a>
      */
 
     public boolean isAcronym(List<String> words, String s) {
@@ -727,7 +727,7 @@ public class GetConcatenation {
 
     /**
     3232. Find if Digit Game Can Be Won
-    https://leetcode.com/problems/find-if-digit-game-can-be-won/description
+    <a href="https://leetcode.com/problems/find-if-digit-game-can-be-won/description>LeetCode description</a>
      */
 
     public boolean canAliceWin(int[] nums) {
@@ -745,7 +745,7 @@ public class GetConcatenation {
 
     /**
     804. Unique Morse Code Words
-    https://leetcode.com/problems/unique-morse-code-words/description
+    <a href="https://leetcode.com/problems/unique-morse-code-words/description>LeetCode description</a>
      */
 
     public int uniqueMorseRepresentations(String[] words) {
@@ -768,7 +768,7 @@ public class GetConcatenation {
 
     /**
     1913. Maximum Product Difference Between Two Pairs
-    https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description
+    <a href="https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description>LeetCode description</a>
      */
 
     public int maxProductDifference(int[] nums) {
@@ -793,7 +793,7 @@ public class GetConcatenation {
 
     /**
     1464. Maximum Product of Two Elements in an Array
-    https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array
+    <a href="https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/description">LeetCode description</a>
      */
 
     public int maxProduct(int[] nums) {
@@ -811,7 +811,7 @@ public class GetConcatenation {
 
     /**
     1266. Minimum Time Visiting All Points
-    https://leetcode.com/problems/minimum-time-visiting-all-points/description/
+    <a href="https://leetcode.com/problems/minimum-time-visiting-all-points/description>LeetCode description</a>
      */
 
     public int minTimeToVisitAllPoints(int[][] points) {

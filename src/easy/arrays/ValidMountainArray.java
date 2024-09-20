@@ -1,4 +1,4 @@
-package arrays.easy;
+package easy.arrays;
 
 public class ValidMountainArray {
 
